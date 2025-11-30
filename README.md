@@ -113,23 +113,7 @@ streamlit run streamlit_app.py
 
 ## 🔍 Architecture Diagram
 
-The architecture is shown below and also provided in `architecture.md`.
-
-```mermaid
-flowchart TD
-
-A[User Opens Streamlit Support UI] --> B[User Types Support Query]
-
-B --> C[Query Handler]
-C --> D[OpenRouter GPT API]
-D --> E[AI Response]
-
-E --> F{Is Query Simple?}
-
-F -->|Yes| G[Display Solution on Streamlit UI]
-F -->|No| H[Generate Escalation Summary]
-H --> I[Escalate to Human AI Support]
-```
+The architecture is provided in `architecture.md`.
 
 ---
 
